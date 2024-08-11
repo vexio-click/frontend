@@ -16,7 +16,7 @@ export const useCounterStore = defineStore('contactUs', {
       params.append('limit', limit.toString())
       params.append('offset', offset.toString())
 
-      return await fetch(APP_SERVER_URL + 'api/appellants' + '?' + params.toString()).then(
+      return await fetch(APP_SERVER_URL + 'appellants' + '?' + params.toString()).then(
         async (response) => {
           if (response.status == 200) {
             const serverAppellants = await response.json()
@@ -44,7 +44,7 @@ export const useCounterStore = defineStore('contactUs', {
     },
 
     async postAppellant(formData: FormData) {
-      return await fetch(APP_SERVER_URL + 'api/appellants', {
+      return await fetch(APP_SERVER_URL + 'appellants', {
         body: formData,
         method: 'POST'
       })

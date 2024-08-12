@@ -343,19 +343,19 @@ main {
     }
     .container {
       width: 100%;
-      padding: 32px;
+      padding: 16px;
       box-sizing: border-box;
       .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(344px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(328px, 1fr));
         grid-template-rows: repeat(auto-fit, 254px);
         align-items: flex-start;
         justify-items: center;
         grid-gap: 16px;
         .appellant {
           border-radius: 10px;
-          width: 344px;
-          height: 254px;
+          width: 100%;
+          height: 100%;
           padding: 20px;
           box-sizing: border-box;
           background: rgb(255, 247, 223);

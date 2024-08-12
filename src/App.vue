@@ -9,6 +9,7 @@ import { RouterView } from 'vue-router'
 <style lang="scss">
 body {
   margin: 0;
+  min-width: 360px;
 }
 img {
   pointer-events: none;
